@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldwood Industries - Premium Plywood Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="wood-logo">
+                <i class="fas fa-tree"></i>
+            </div>
+            <h2>Goldwood Industries</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tree"></i>
+                <span>Goldwood Industries</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="wood-grain"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Premium</span>
+                    <span class="title-line">Plywood</span>
+                    <span class="title-line">Solutions</span>
+                </h1>
+                <p class="hero-subtitle">Crafting excellence in wood since 1985. Your trusted partner for high-quality plywood and timber solutions.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('services')">
+                        <span>Our Services</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <span>Get Quote</span>
+                        <i class="fas fa-phone"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-award"></i>
+                        <h3>35+ Years</h3>
+                        <p>of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">About Goldwood</span>
+                <h2 class="section-title">Crafting Quality Since 1985</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>Our Story</h3>
+                        <p>Founded in 1985, Goldwood Industries has been at the forefront of the plywood industry, delivering exceptional quality and innovative solutions. We combine traditional craftsmanship with modern technology to create products that stand the test of time.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="35">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5000">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Product Varieties</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="wood-texture-overlay"></div>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Eco-Friendly</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Quality Assured</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tools"></i>
+                                <span>Expert Craftsmanship</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Services</span>
+                <h2 class="section-title">Complete Plywood Solutions</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Interior Plywood</h3>
+                    <p>Premium quality interior plywood for furniture, cabinets, and decorative applications with smooth finish and durability.</p>
+                    <ul class="service-features">
+                        <li>Moisture Resistant</li>
+                        <li>Smooth Finish</li>
+                        <li>Various Thickness</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Plywood</h3>
+                    <p>Heavy-duty commercial grade plywood designed for construction, flooring, and structural applications.</p>
+                    <ul class="service-features">
+                        <li>High Strength</li>
+                        <li>Weather Resistant</li>
+                        <li>Load Bearing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Marine Plywood</h3>
+                    <p>Waterproof marine grade plywood perfect for boats, outdoor furniture, and moisture-prone environments.</p>
+                    <ul class="service-features">
+                        <li>100% Waterproof</li>
+                        <li>Marine Grade</li>
+                        <li>Long Lasting</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Custom Cutting</h3>
+                    <p>Precision cutting services tailored to your specific requirements with advanced machinery and expert craftsmanship.</p>
+                    <ul class="service-features">
+                        <li>Precision Cutting</li>
+                        <li>Custom Sizes</li>
+                        <li>Quick Turnaround</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Delivery Service</h3>
+                    <p>Fast and reliable delivery service ensuring your plywood reaches you in perfect condition, on time.</p>
+                    <ul class="service-features">
+                        <li>Same Day Delivery</li>
+                        <li>Safe Packaging</li>
+                        <li>Wide Coverage</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Consultation</h3>
+                    <p>Expert consultation services to help you choose the right plywood for your specific project needs.</p>
+                    <ul class="service-features">
+                        <li>Expert Advice</li>
+                        <li>Project Planning</li>
+                        <li>Cost Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Work</span>
+                <h2 class="section-title">Gallery Showcase</h2>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="marine">Marine</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="interior">
+                    <div class="gallery-image">
+                        <div class="wood-sample interior-wood"></div>
+                        <div class="gallery-overlay">
+                            <h4>Premium Interior Plywood</h4>
+                            <p>Perfect for furniture and cabinets</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-image">
+                        <div class="wood-sample commercial-wood"></div>
+                        <div class="gallery-overlay">
+                            <h4>Commercial Grade Plywood</h4>
+                            <p>Heavy-duty construction material</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="marine">
+                    <div class="gallery-image">
+                        <div class="wood-sample marine-wood"></div>
+                        <div class="gallery-overlay">
+                            <h4>Marine Plywood</h4>
+                            <p>Waterproof and durable</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="interior">
+                    <div class="gallery-image">
+                        <div class="wood-sample decorative-wood"></div>
+                        <div class="gallery-overlay">
+                            <h4>Decorative Plywood</h4>
+                            <p>Beautiful wood grain patterns</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-image">
+                        <div class="wood-sample structural-wood"></div>
+                        <div class="gallery-overlay">
+                            <h4>Structural Plywood</h4>
+                            <p>High strength applications</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="marine">
+                    <div class="gallery-image">
+                        <div class="wood-sample outdoor-wood"></div>
+                        <div class="gallery-overlay">
+                            <h4>Outdoor Plywood</h4>
+                            <p>Weather resistant finish</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Get In Touch</span>
+            <h2 class="section-title">Contact Goldwood Industries</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Visit Our Location</h4>
+                    <p>123 Industrial Estate<br>Woodcraft District<br>Mumbai, Maharashtra 400001</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Call Us Today</h4>
+                    <p>+91 98765 43210<br>+91 87654 32109</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email Address</h4>
+                    <p>info@goldwoodindustries.com<br>sales@goldwoodindustries.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Working Hours</h4>
+                    <p>Mon - Sat: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="interior">Interior Plywood</option>
+                            <option value="commercial">Commercial Plywood</option>
+                            <option value="marine">Marine Plywood</option>
+                            <option value="custom">Custom Cutting</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                        <label for="service">Service Required</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Embedded Map -->
+        <div style="margin-top: 3rem; border-radius: 12px; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
+            <iframe
+                title="Goldwood Industries Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8698742072826!2d72.87765577503001!3d19.072847752548716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8c2c7f2c2f1%3A0x6bafdb1e3bb7cdcb!2sMumbai%2C%20Maharashtra%20400001!5e0!3m2!1sen!2sin!4v1719027600000!5m2!1sen!2sin"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-tree"></i>
+                        <span>Goldwood Industries</span>
+                    </div>
+                    <p>Your trusted partner for premium plywood solutions since 1985. Quality, durability, and excellence in every piece.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Interior Plywood</a></li>
+                        <li><a href="#">Commercial Plywood</a></li>
+                        <li><a href="#">Marine Plywood</a></li>
+                        <li><a href="#">Custom Cutting</a></li>
+                        <li><a href="#">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Industrial Estate, Mumbai</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@goldwoodindustries.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Goldwood Industries. All rights reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
