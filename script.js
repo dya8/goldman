@@ -240,100 +240,104 @@ serviceCards.forEach((card) => {
 })
 
 // Gallery lightbox effect
-const galleryImages = document.querySelectorAll(".gallery-image")
-galleryImages.forEach((image) => {
-  image.addEventListener("click", () => {
+// View button opens lightbox with the corresponding gallery image
+document.querySelectorAll(".view-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation(); // prevent other unintended triggers
+
+    // Get the parent .gallery-image element
+    const galleryImage = btn.closest(".gallery-image");
+
     // Create lightbox overlay
-    const lightbox = document.createElement("div")
-    lightbox.className = "lightbox"
+    const lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
     lightbox.innerHTML = `
-            <div class="lightbox-content">
-                <span class="lightbox-close">&times;</span>
-                <div class="lightbox-image">
-                    ${image.innerHTML}
-                </div>
-            </div>
-        `
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-image">
+          ${galleryImage.innerHTML}
+        </div>
+      </div>
+    `;
 
-    // Add lightbox styles
+    // Lightbox styles
     lightbox.style.cssText = `
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10000;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        `
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    `;
 
-    const lightboxContent = lightbox.querySelector(".lightbox-content")
+    const lightboxContent = lightbox.querySelector(".lightbox-content");
     lightboxContent.style.cssText = `
-            position: relative;
-            max-width: 90%;
-            max-height: 90%;
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            transform: scale(0.8);
-            transition: transform 0.3s ease;
-        `
+      position: relative;
+      max-width: 90%;
+      max-height: 90%;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      transform: scale(0.8);
+      transition: transform 0.3s ease;
+    `;
 
-    const closeBtn = lightbox.querySelector(".lightbox-close")
+    const closeBtn = lightbox.querySelector(".lightbox-close");
     closeBtn.style.cssText = `
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 2rem;
-            color: white;
-            background: rgba(0,0,0,0.5);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 1;
-            transition: background 0.3s ease;
-        `
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 2rem;
+      color: white;
+      background: rgba(0,0,0,0.5);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1;
+      transition: background 0.3s ease;
+    `;
 
-    document.body.appendChild(lightbox)
+    document.body.appendChild(lightbox);
 
     // Animate in
     setTimeout(() => {
-      lightbox.style.opacity = "1"
-      lightboxContent.style.transform = "scale(1)"
-    }, 10)
+      lightbox.style.opacity = "1";
+      lightboxContent.style.transform = "scale(1)";
+    }, 10);
 
-    // Close lightbox
+    // Close logic
     const closeLightbox = () => {
-      lightbox.style.opacity = "0"
-      lightboxContent.style.transform = "scale(0.8)"
+      lightbox.style.opacity = "0";
+      lightboxContent.style.transform = "scale(0.8)";
       setTimeout(() => {
-        document.body.removeChild(lightbox)
-      }, 300)
-    }
+        document.body.removeChild(lightbox);
+      }, 300);
+    };
 
-    closeBtn.addEventListener("click", closeLightbox)
+    closeBtn.addEventListener("click", closeLightbox);
     lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox) closeLightbox()
-    })
+      if (e.target === lightbox) closeLightbox();
+    });
 
-    // Close on escape key
-    const handleEscape = (e) => {
-      if (e.key === "Escape") {
-        closeLightbox()
-        document.removeEventListener("keydown", handleEscape)
+    document.addEventListener("keydown", function escClose(ev) {
+      if (ev.key === "Escape") {
+        closeLightbox();
+        document.removeEventListener("keydown", escClose);
       }
-    }
-    document.addEventListener("keydown", handleEscape)
-  })
-})
+    });
+  });
+});
+
 
 // Add floating animation to hero elements
 const floatingElements = document.querySelectorAll(".floating-card, .hero-image")
