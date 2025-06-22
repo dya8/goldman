@@ -357,6 +357,28 @@ body {
   opacity: 0;
   animation: fadeInUp 0.8s ease 1.3s forwards;
 }
+/**mob colr change*/
+@media (max-width: 768px) 
+{
+  .hero-title{
+    color:var(--primary-color)
+  }
+  .hero-subtitle
+  {
+    color:var(--black);
+  }
+  .btn-secondary span
+  {
+  color: var(--black);
+ 
+  }
+  .btn-pr span
+  {
+    border: 2px solid var(--black)
+  }
+}
+  
+
 
 .hero-buttons {
   display: flex;
