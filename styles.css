@@ -39,7 +39,7 @@ body {
   font-family: var(--font-secondary);
   line-height: 1.6;
   color: var(--black);
-  background-color: var(--light-wood); /* 👈 Matches warm theme */
+ 
   overflow-x: hidden;
 }
 
@@ -57,7 +57,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /*background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));*/
+ 
   background: whitesmoke;
   display: flex;
   align-items: center;
@@ -141,21 +141,22 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--white);
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
   color: var(--cream);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 0 0 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Soft frosted edge */
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.1),  /* Outer soft shadow */
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2); /* Light inner line */
   z-index: 1000;
   transition: var(--transition);
-  box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.08),  /* Soft outer shadow */
-    inset 0 -1px 0 rgba(0, 0, 0, 0.05); /* Subtle inner shadow line */
-  border-radius: 0 0 12px 12px; /* Rounded bottom corners only */
 }
 
 /* Nav Links */
 .navbar a {
-  color: var(--secondary-color);
+  color: var(--accent-color);
   text-decoration: none;
   margin: 0 1rem;
   
@@ -170,7 +171,7 @@ body {
 
 /* Navbar when scrolled */
 .navbar.scrolled {
-  background-color: var(--white); /* Slightly lighter on scroll */
+ 
   box-shadow: var(--shadow-medium);
 }
 .nav-container {
@@ -191,12 +192,28 @@ body {
   color: var( --accent-color);
 }
 
-.nav-logo i {
+.nav-logo i
+ {
   margin-right: 0.5rem;
   font-size: 1.8rem;
   color: var(--accent-color);
-}
 
+}
+.nav-logo span {
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  font-size: 1.5rem;               /* Scalable size for clarity */
+  letter-spacing: 1px;             /* Elegant spacing between letters */
+  text-transform: uppercase;       /* Makes it more prominent */
+  color: var(--accent-color);   /* Ensures it aligns with theme */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Soft depth */
+  transition: color 0.3s ease;
+}
+@media (max-width: 768px) {
+  .nav-logo span {
+    font-size: 1.2rem; /* Adjusted for smaller screens */
+  }
+}
 .nav-menu {
   display: flex;
   list-style: none;
@@ -237,12 +254,13 @@ body {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: var(--primary-color);
+   background: var(--accent-color);
   margin: 3px 0;
   transition: var(--transition);
 }
@@ -1195,35 +1213,26 @@ section {
  
   .hamburger {
     display: flex;  
-    background-color:var(--accent-color);
+ 
 
   }
 
  .nav-menu {
+
   position: fixed;
-  top: 70px;
+  top: 61px;
   left: -100%;
   width: 100%;
   height: calc(100vh - 70px);
-  background:
-    repeating-linear-gradient(
-      -45deg,
-      rgba(160, 82, 45, 0.08) 0px,
-      rgba(160, 82, 45, 0.08) 3px,
-      transparent 3px,
-      transparent 6px
-    ),
-    repeating-linear-gradient(
-      45deg,
-      rgba(210, 105, 30, 0.05) 0px,
-      rgba(210, 105, 30, 0.05) 4px,
-      transparent 4px,
-      transparent 8px
-    ),
-    linear-gradient(135deg, #d2a679, #a87d4b); /* lighter teak-like tones */
 
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.5px);
+  background: rgba(255, 255, 255, 0.6); /* Matching transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3); /* Optional soft edge */
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.1),     /* Soft outer shadow */
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2); /* Light inner line */
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1231,6 +1240,8 @@ section {
   padding-top: 2rem;
   transition: var(--transition);
   z-index: 1000;
+
+
 }
 
 .nav-menu.active {
@@ -1240,23 +1251,32 @@ section {
 .nav-menu li {
   list-style: none;
   width: 100%;
+  
   max-width: 400px;
   margin: 1rem 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
   display: inline-block;
-
-  /* Transparent soft wood tone */
-  background: linear-gradient(135deg, rgba(241, 227, 211, 0.25), rgba(227, 202, 165, 0.25));
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+
+ 
+ 
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Soft frosted edge */
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.1),       /* Outer soft shadow */
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2); /* Light inner line */
+
+  transition: var(--transition);
 }
 
+
+
 .nav-menu li:hover {
-  /* Darker wood tone on hover */
-  background: linear-gradient(135deg, rgba(139, 69, 19, 0.35), rgba(101, 55, 0, 0.35));
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.12),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.25);
 }
 
 .nav-menu li a {
