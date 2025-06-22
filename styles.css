@@ -361,7 +361,7 @@ body {
 @media (max-width: 768px) 
 {
   .hero-title{
-    color:var(--primary-color)
+    color :hsl(25, 78%, 9%)
   }
   .hero-subtitle
   {
@@ -372,7 +372,7 @@ body {
   color: var(--black);
  
   }
-  .btn-pr span
+  .btn-secondary
   {
     border: 2px solid var(--black)
   }
@@ -1339,11 +1339,20 @@ section {
     width: 100%;
     justify-content: center;
   }
+  
+  .btn-secondary {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+  }
+  .btn-secondary span {
+    color: var(--white);
+  }
 
   .nav-container {
     padding: 1rem;
   }
-
+  
+  
   .container {
     padding: 0 1rem;
   }
