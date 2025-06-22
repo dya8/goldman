@@ -360,13 +360,8 @@ body {
 /**mob colr change*/
 @media (max-width: 768px) 
 {
-  .hero-title{
-    color :hsl(25, 78%, 9%)
-  }
-  .hero-subtitle
-  {
-    color:var(--black);
-  }
+  
+  
   .btn-secondary span
   {
   color: var(--black);
