@@ -63,7 +63,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 10000;
-  transition: opacity 1s ease-in, visibility 2.0s ease;
+  transition: opacity 2s ease-in, visibility 3.0s ease;
 }
 
 #loading-screen.hidden {
