@@ -67,9 +67,9 @@ body {
 }
 
 /* Media query for iPhone 14 and similar screen sizes */
-@media(max-width: 768px) {
+@media(max-width: 480px) {
   #loading-screen {
-    background: url('pexels-catiamatos-1072179.jpg') no-repeat center center fixed;
+    background: url('pexels-catiamatos-1072179.jpg') no-repeat ;
     background-size: cover;
     transition: opacity 2s ease-in, visibility 3.0s ease;
   }
