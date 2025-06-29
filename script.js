@@ -426,6 +426,14 @@ buttons.forEach((button) => {
     }, 600)
   })
 })
+function openWhatsApp() {
+    const phoneNumber = "918330006300"; // Your WhatsApp Business number (without +)
+    const message = "Hi Goldwood, I am interested in getting a quote.";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappURL, '_blank');
+}
+// Add WhatsApp button functionality
 
 // Add CSS for ripple animation
 const style = document.createElement("style")

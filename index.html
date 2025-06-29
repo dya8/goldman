@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goldwood Industries - Premium Plywood Solutions</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -26,9 +28,10 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-tree"></i>
-                <span>Goldwood Industries</span>
+            <img src="goldwood_logo_page-0001__1_-removebg-preview.png" alt="Goldwood Logo" class="logo-img" />
+            <span>Goldwood Industries</span>
             </div>
+
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link" style="text-decoration:none">Home</a></li>
                 <li><a href="#about" class="nav-link"style="text-decoration:none">About</a></li>
@@ -68,17 +71,18 @@
                         <span>Our Services</span>
                         <i class="fas fa-arrow-right"></i>
                     </button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
-                        <span>Get Quote</span>
-                        <i class="fas fa-phone"></i>
-                    </button>
+                    <button class="btn btn-secondary" onclick="openWhatsApp()">
+    <span>Get Quote</span>
+    <i class="fab fa-whatsapp"></i>
+</button>
+
                 </div>
             </div>
             <div class="hero-image">
                 <div class="floating-card">
                     <div class="card-content">
                         <i class="fas fa-award"></i>
-                        <h3>35+ Years</h3>
+                        <h3>25+ Years</h3>
                         <p>of Excellence</p>
                     </div>
                 </div>
@@ -94,27 +98,27 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-subtitle">About Goldwood</span>
-                <h2 class="section-title">Crafting Quality Since 1985</h2>
+                <h2 class="section-title">Crafting Quality since 2000</h2>
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <div class="about-card">
                         <h3>Our Story</h3>
-                        <p>Founded in 1985, Goldwood Industries has been at the forefront of the plywood industry, delivering exceptional quality and innovative solutions. We combine traditional craftsmanship with modern technology to create products that stand the test of time.</p>
+                        <p>Established 25 years ago by Shanavas Hassan, Sakthi Gold is a leading provider of high-quality plywood and veneers. With a strong presence in Kerala, Mumbai, Chennai, and Bangalore, we deal in both local and imported wood and are among the region’s top timber exporters. Committed to quality and client satisfaction, we continue to expand and serve diverse industrial and public needs</p>
                     </div>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <div class="stat-number" data-target="35">0</div>
+                            <div class="stat-number" data-target="25">0</div>
                             <div class="stat-label">Years Experience</div>
                         </div>
                         <div class="stat-item">
                             <div class="stat-number" data-target="5000">0</div>
                             <div class="stat-label">Projects Completed</div>
                         </div>
-                        <div class="stat-item">
+                <!----        <div class="stat-item">
                             <div class="stat-number" data-target="50">0</div>
                             <div class="stat-label">Product Varieties</div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 <div class="about-image">
@@ -223,6 +227,138 @@
             </div>
         </div>
     </section>
+    <!-- Sakthi Gold Plywood Section -->
+<section id="sakthi-gold" class="sakthi-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-down">
+      <span class="section-subtitle">Premium Plywood</span>
+      <h2 class="section-title">Sakthi Gold Plywood</h2>
+    </div>
+    <div class="sakthi-content">
+      <div class="sakthi-text" data-aos="fade-right">
+        <p class="intro">
+          Started 25 years ago by <strong>Shanavas Hassan</strong>, Sakthi Gold has grown into a trusted plywood and timber brand with a strong presence across <strong>Kerala, Mumbai, Chennai</strong>, and <strong>Bangalore</strong>. Known for its high-quality local and imported plywood, Sakthi Gold is one of the region's top timber exporters—driven by quality and customer-first values.
+        </p>
+
+        <h4 class="why-title">Why Choose Sakthi Gold?</h4>
+        <ul class="feature-list">
+          <li><i class="fas fa-shield-alt"></i> Extra Strength</li>
+          <li><i class="fas fa-water"></i> Waterproof</li>
+          <li><i class="fas fa-bug"></i> Termite Resistant</li>
+          <li><i class="fas fa-infinity"></i> Long Lasting</li>
+        </ul>
+      </div>
+
+      <div class="sakthi-image" data-aos="fade-left">
+        <div class="glass-card">
+          <img src="Sakthi_Gold_Logo_page-0001.jpg" alt="Sakthi Gold Plywood" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sub Brands Section -->
+<section id="sub-brands" class="brands-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-down">
+      <span class="section-subtitle">Explore Our Variants</span>
+      <h2 class="section-title">Our Sub Brands</h2>
+    </div>
+    <div class="card-grid">
+      <div class="brand-card" data-aos="fade-up">
+        <div class="badge platinum">Platinum</div>
+        <h4>Sakthi Platinum</h4>
+        <ul>
+          <li><i class="fas fa-tree"></i> Eucalyptus</li>
+          <li><i class="fas fa-flask"></i> PF Gum</li>
+          <li><i class="fas fa-certificate"></i> 710 Grade</li>
+          <li><i class="fas fa-infinity"></i> Life Long Guarantee</li>
+        </ul>
+      </div>
+
+      <div class="brand-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="badge platinum">Platinum</div>
+        <h4>Sakthi Platinum Plus</h4>
+        <ul>
+          <li><i class="fas fa-tree"></i> Gurjan + Eucalyptus</li>
+          <li><i class="fas fa-flask"></i> PF Gum</li>
+          <li><i class="fas fa-certificate"></i> 710 Grade</li>
+          <li><i class="fas fa-infinity"></i> Life Long Guarantee</li>
+        </ul>
+      </div>
+
+      <div class="brand-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="badge platinum">Platinum</div>
+        <h4>Sakthi Platinum Club</h4>
+        <ul>
+          <li><i class="fas fa-tree"></i> Full Gurjan</li>
+          <li><i class="fas fa-flask"></i> PF Gum</li>
+          <li><i class="fas fa-certificate"></i> 710 Grade</li>
+          <li><i class="fas fa-infinity"></i> Life Long Guarantee</li>
+        </ul>
+      </div>
+
+      <div class="brand-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="badge gold">Gold</div>
+        <h4>Sakthi Gold (BWR) Dipping</h4>
+        <ul>
+          <li><i class="fas fa-tree"></i> Eucalyptus</li>
+          <li><i class="fas fa-flask"></i> MUF Gum</li>
+        </ul>
+      </div>
+
+      <div class="brand-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="badge silver">Silver</div>
+        <h4>Sakthi Silver (MR) Without Dipping</h4>
+        <ul>
+          <li><i class="fas fa-tree"></i> Eucalyptus</li>
+          <li><i class="fas fa-flask"></i> MUF Gum</li>
+        </ul>
+      </div>
+
+      <div class="brand-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="badge bronze">Ultra Plus</div>
+        <h4>Ultra Plus (BWR) Dipping</h4>
+        <ul>
+          <li><i class="fas fa-tree"></i> Mahogany + Eucalyptus</li>
+          <li><i class="fas fa-flask"></i> MUF Gum</li>
+        </ul>
+      </div>
+
+      <div class="brand-card" data-aos="fade-up" data-aos-delay="600">
+        <div class="badge bronze">Ultra</div>
+        <h4>Ultra (MR) Without Dipping</h4>
+        <ul>
+          <li><i class="fas fa-tree"></i> Mahogany + Eucalyptus</li>
+          <li><i class="fas fa-flask"></i> MUF Gum</li>
+        </ul>
+      </div>
+
+      <div class="brand-card" data-aos="fade-up" data-aos-delay="700">
+        <div class="badge alternate">Alternate</div>
+        <h4>Star Plus (BWR) Alternate</h4>
+        <ul>
+          <li><i class="fas fa-tree"></i> Mahogany + Rubber</li>
+          <li><i class="fas fa-flask"></i> MUF Gum</li>
+        </ul>
+      </div>
+
+      <div class="brand-card" data-aos="fade-up" data-aos-delay="800">
+        <div class="badge alternate">Alternate</div>
+        <h4>Star (MR) Alternate</h4>
+        <ul>
+          <li><i class="fas fa-tree"></i> Mahogany + Rubber</li>
+          <li><i class="fas fa-flask"></i> MUF Gum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
@@ -317,14 +453,14 @@
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <h4>Visit Our Location</h4>
-                    <p>123 Industrial Estate<br>Woodcraft District<br>Mumbai, Maharashtra 400001</p>
+                    <p>11/556 Golden Valley<br>Muvattupuzha,Ernakulam<br>Kerala,India</p>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
                     <h4>Call Us Today</h4>
-                    <p>+91 98765 43210<br>+91 87654 32109</p>
+                    <p>+91 8330006300</p>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">
@@ -382,7 +518,7 @@
         <div style="margin-top: 3rem; border-radius: 12px; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
             <iframe
                 title="Goldwood Industries Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8698742072826!2d72.87765577503001!3d19.072847752548716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8c2c7f2c2f1%3A0x6bafdb1e3bb7cdcb!2sMumbai%2C%20Maharashtra%20400001!5e0!3m2!1sen!2sin!4v1719027600000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d28295.52098121064!2d76.56049577876507!3d10.025321628503313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDAxJzMxLjMiTiA3NsKwMzMnNTMuOCJF!5e0!3m2!1sen!2sin!4v1751181581683!5m2!1sen!2sin"
                 width="100%"
                 height="400"
                 style="border:0;"
@@ -401,10 +537,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-tree"></i>
-                        <span>Goldwood Industries</span>
+                       <div class="nav-logo">
+            <img src="goldwood_logo_page-0001__1_-removebg-preview.png" alt="Goldwood Logo" class="logo-img" />
+         <span>Goldwood Industries</span>               
+        </div>
+                       
                     </div>
-                    <p>Your trusted partner for premium plywood solutions since 1985. Quality, durability, and excellence in every piece.</p>
+                    <p>Your search for affordable,long-lasting plywood ends here!!</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -436,16 +575,16 @@
                     <h4>Contact Info</h4>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Industrial Estate, Mumbai</span>
+                        <span>11/556 Golden Valley,Muvattupuzha,Ernakulam,Kerala,India</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <span>+91 98765 43210</span>
+                        <span>+91 8330006300</span>
                     </div>
-                    <div class="contact-item">
+                 <!----   <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>info@goldwoodindustries.com</span>
-                    </div>
+                        <span>info@goldwoodindustries.com</span
+                    </div>-->
                 </div>
             </div>
             <div class="footer-bottom">
@@ -455,5 +594,13 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    offset: 100,
+    once: true
+  });
+</script>
 </body>
 </html>
