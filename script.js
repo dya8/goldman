@@ -434,6 +434,34 @@ function openWhatsApp() {
     window.open(whatsappURL, '_blank');
 }
 // Add WhatsApp button functionality
+function sendToWhatsApp(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !phone || !service || !message) {
+        alert("Please fill out all fields.");
+        return;
+    }
+
+    const fullMessage = `New Inquiry from Goldwood Website:
+    
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Service Interested: ${service}
+Message: ${message}`;
+
+    const encodedMsg = encodeURIComponent(fullMessage);
+    const whatsappNumber = "918330006300"; // Your WhatsApp business number
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMsg}`;
+
+    window.open(whatsappURL, '_blank');
+}
 
 // Add CSS for ripple animation
 const style = document.createElement("style")
