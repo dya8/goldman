@@ -65,7 +65,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 10000;
-  transition: opacity 2s ease-in, visibility 3s ease;
+  transition: opacity 1s ease-in, visibility 2s ease;
   background-color: #000;
 }
 
@@ -120,7 +120,7 @@ body {
   height: 100%;
   background: var(--accent-color);
   width: 0;
-  animation: loadingProgress 3s ease forwards;
+  animation:loadProgress 1s ease forwards;
 }
 
 @keyframes pulse {
@@ -144,8 +144,11 @@ body {
   }
 }
 
-@keyframes loadingProgress {
-  to {
+@keyframes loadProgress {
+  0% {
+    width: 0;
+  }
+  100% {
     width: 100%;
   }
 }
@@ -167,14 +170,14 @@ body {
     inset 0 -1px 0 rgba(255, 255, 255, 0.2); /* Light inner line */
   z-index: 1000;
   transition: var(--transition);
+  padding:0; /* Padding for better spacing */
 }
 
 /* Nav Links */
 .navbar a {
   color: var(--accent-color);
   text-decoration: none;
-  margin: 0 1rem;
-  
+
   
   transition: var(--transition);
 }
@@ -231,7 +234,7 @@ body {
 }
 .nav-logo img.logo-img {
   height:60px;
-  width: 60px;
+  width: auto;
   margin-right: 10px;
   transition: transform 0.3s ease;
 }
