@@ -249,7 +249,7 @@ body {
     margin-right: 8px;
   }
 }
-
+/*
 .nav-menu {
   display: flex;
   list-style: none;
@@ -263,6 +263,29 @@ body {
   font-weight: 500;
   position: relative;
   transition: var(--transition);
+}*/
+.navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* optional: if you want all items centered horizontally */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .nav-menu li {
+  position: relative;
+  margin: 0 10px;
+}
+
+.navbar .nav-link {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover,
@@ -1506,7 +1529,7 @@ section {
   justify-content: center;
 }
 
-.glass-card {
+/*.glass-card {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.25);
   border-radius: 20px;
@@ -1516,6 +1539,7 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: transform 0.4s ease;
 }
+  */
 
 .glass-card:hover {
   transform: scale(1.03);
@@ -1632,4 +1656,91 @@ section {
 .badge.alternate {
   background: #6c5ce7;
   color: white;
+}
+/* Dropdown Styling */
+/* Dropdown Container */
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown > .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* Dropdown Icon */
+.navbar .dropdown > .nav-link i {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown Menu Style */
+/* Glassmorphic Dropdown Menu */
+.navbar .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.297); /* Semi-transparent white */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle inner border */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Soft outer shadow */
+  border-radius: 16px;
+  padding: 0.5rem 0;
+  min-width: 200px;
+  display: none;
+  z-index: 999;
+  animation: dropdownFade 0.3s ease;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Items */
+.dropdown-menu li a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+}
+
+/* Fade animation */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown-menu {
+  text-align: center;
+}
+
+.dropdown-menu li a {
+  justify-content: center;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .dropdown .dropdown-menu {
+    display:none;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
 }
