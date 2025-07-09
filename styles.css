@@ -1199,7 +1199,15 @@ section {
 .footer-section ul li a:hover {
   color: var(--accent-color);
 }
+@media(max-width:786px) {
+  .footer-section .contact-item
+  {
+display: flex  ;
+align-items: center;
+justify-content:center;
 
+}
+}
 .social-links {
   display: flex;
   gap: 1rem;
