@@ -43,7 +43,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -90,7 +89,22 @@ body {
   text-align: center;
  
 }
-
+.loading-content h3 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+ 
+  color: var(--light-wood);
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+.loading-content h4 {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--light-wood);
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
 .wood-logo {
   font-size: 4rem;
   margin-bottom: 1rem;
@@ -98,14 +112,7 @@ body {
    color:var(--accent-color);
 }
 
-.loading-content h2 {
-  font-family: var(--font-primary);
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  opacity: 0;
-  animation: fadeInUp 1s ease 0.5s forwards;
-  color:var(--accent-color);
-}
+
 
 .loading-bar {
   width: 200px;
