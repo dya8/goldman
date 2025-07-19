@@ -64,7 +64,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 10000;
-  transition: opacity 1s ease-in, visibility 2s ease;
+  transition: opacity 1s ease-in, visibility 1s ease;
   background-color: #000;
 }
 
@@ -105,12 +105,6 @@ body {
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
 }
-.wood-logo {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  animation: pulse 2s infinite;
-   color:var(--accent-color);
-}
 
 
 
@@ -127,7 +121,7 @@ body {
   height: 100%;
   background: var(--dark-wood);
   width: 0;
-  animation:loadProgress 1s ease-out forwards;
+  animation:loadProgress 1s ease-in-out forwards;
 }
 
 @keyframes pulse {
