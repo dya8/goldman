@@ -1536,6 +1536,24 @@ justify-content:center;
   color: #2c3e50;
 }
 
+.sakthi-image {
+  width: 100%;
+  max-width: 400px;  /* Optional limit */
+  height: 300px;      /* Fixed height */
+  overflow: hidden;   /* Crop anything that goes outside */
+}
+
+.sakthi-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Makes image cover the div */
+  display: block;
+}
+
+
+
+
+
 .feature-list {
   list-style: none;
   padding: 0;
