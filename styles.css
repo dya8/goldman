@@ -57,7 +57,7 @@ body {
   width: 100%;
   height: 100%;
 
-  background: url('pexels-catiamatos-1072179.jpg') no-repeat center center;
+  background: url('pexels-dsd-143941-975416.jpg') no-repeat center center;
   background-size: cover; /* Ensures full coverage and preserves aspect ratio */
   
   display: flex;
@@ -91,17 +91,17 @@ body {
 }
 .loading-content h3 {
   font-family: var(--font-primary);
-  font-size: 2rem;
+  font-size: 3rem;
  
-  color: var(--light-wood);
+  color: black;
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
 }
 .loading-content h4 {
   font-family: var(--font-primary);
-  font-size: 1rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--light-wood);
+  color:black;
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
 }
@@ -119,7 +119,7 @@ body {
 
 .loading-progress {
   height: 100%;
-  background: var(--dark-wood);
+  background: var(--black);
   width: 0;
   animation:loadProgress 1s ease-in-out forwards;
 }
@@ -1714,6 +1714,7 @@ justify-content:center;
   background: linear-gradient(to right, #bdc3c7, #ecf0f1);
   color: #2c3e50;
 }
+
 .badge.bronze {
   background: linear-gradient(to right, #cd853f, #f0e68c);
   color: #2c3e50;
