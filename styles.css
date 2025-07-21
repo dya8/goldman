@@ -94,7 +94,7 @@ body {
   font-size: 3rem;
  
   color: black;
-  opacity: 0;
+  opacity: 1;
   animation: fadeInUp 1s ease forwards;
 }
 .loading-content h4 {
