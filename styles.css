@@ -57,7 +57,7 @@ body {
   width: 100%;
   height: 100%;
 
-  background: url('t21.jpg') no-repeat center center;
+  background: url('sven-brandsma-ZvO9hqVE62s-unsplash.jpg') no-repeat center center;
   background-size: cover; /* Ensures full coverage and preserves aspect ratio */
   
   display: flex;
@@ -93,7 +93,7 @@ body {
   font-family: var(--font-primary);
   font-size: 3rem;
  
-  color:var(--black);
+  color:var(--light-wood);
   opacity: 1;
   animation: fadeInUp 1s ease forwards;
 }
@@ -101,7 +101,7 @@ body {
   font-family: var(--font-primary);
   font-size: 2rem;
   margin-bottom: 1rem;
-  color:var(--black);
+  color:var(--light-wood);
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
 }
@@ -119,7 +119,7 @@ body {
 
 .loading-progress {
   height: 100%;
-  background: var(--black);
+  background: var(--dark-wood);
   width: 0;
   animation:loadProgress 1s ease-in-out forwards;
 }
@@ -416,7 +416,7 @@ body {
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  color: black;
+  color:var(--light-wood);
 }
 
 .title-line {
@@ -437,7 +437,7 @@ body {
 
 .hero-subtitle {
   font-size: 1.2rem;
-  color: var(--black);
+  color: var(--cream);
   margin-bottom: 2rem;
   opacity: 0;
   animation: fadeInUp 0.8s ease 1.3s forwards;
