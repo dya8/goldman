@@ -57,7 +57,7 @@ body {
   width: 100%;
   height: 100%;
 
-  background: url('pexels-dsd-143941-975416.jpg') no-repeat center center;
+  background: url('t21.jpg') no-repeat center center;
   background-size: cover; /* Ensures full coverage and preserves aspect ratio */
   
   display: flex;
@@ -93,7 +93,7 @@ body {
   font-family: var(--font-primary);
   font-size: 3rem;
  
-  color: black;
+  color:var(--black);
   opacity: 1;
   animation: fadeInUp 1s ease forwards;
 }
@@ -101,7 +101,7 @@ body {
   font-family: var(--font-primary);
   font-size: 2rem;
   margin-bottom: 1rem;
-  color:black;
+  color:var(--black);
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
 }
@@ -416,7 +416,7 @@ body {
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  color: var(--cream);
+  color: black;
 }
 
 .title-line {
@@ -437,7 +437,7 @@ body {
 
 .hero-subtitle {
   font-size: 1.2rem;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 2rem;
   opacity: 0;
   animation: fadeInUp 0.8s ease 1.3s forwards;
